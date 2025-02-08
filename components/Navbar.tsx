@@ -68,7 +68,7 @@ const ProfileLink = styled(NavItem)`
 `;
 
 const Navbar: React.FC = () => {
-  const { signOut } = useClerk();
+  // const { signOut } = useClerk();
 
   // const handleSignOut = () => {
   //   signOut();
