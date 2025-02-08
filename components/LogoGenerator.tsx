@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
-
 import Image from "next/image";
 
 const ImageGenerator: React.FC = () => {
@@ -19,12 +18,7 @@ const ImageGenerator: React.FC = () => {
 
     const fetchImages = async () => {
       try {
-        const response = await fetch("/api/MyCreations", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ username }),
-        });
-        const data: string[] = await response.json();
+
 
       } catch (error) {
         console.error("Error fetching images:", error);
