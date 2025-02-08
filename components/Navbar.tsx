@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useClerk } from "@clerk/nextjs";
+
 import { UserButton } from "@clerk/nextjs";
 import styled from "styled-components";
 
