@@ -12,7 +12,7 @@ const ImageGenerator: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [imageData, setImageData] = useState<string>("");
   const [error, setError] = useState<string>("");
-  const [images, setImages] = useState<string[]>([]);
+  const [setImages] = useState<string[]>([]);
 
   useEffect(() => {
     if (!username) return;
