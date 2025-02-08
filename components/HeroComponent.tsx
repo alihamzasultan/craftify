@@ -32,8 +32,7 @@ const Hero: React.FC = () => {
             marginBottom: "20px",
           }}
         >
-          AIimage
-        </h1>
+</h1>
         <p
           style={{
             fontSize: "1.2rem",
@@ -43,7 +42,7 @@ const Hero: React.FC = () => {
           }}
         >
           Unlock the power of artificial intelligence to create stunning images
-          with just a simple description. Whether you're designing artwork,
+          with just a simple description. Whether your designing artwork,
           generating unique visuals, or experimenting with creative concepts, our
           AI technology brings your ideas to life.
         </p>
