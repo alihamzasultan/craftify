@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { useClerk } from "@clerk/nextjs";
-import { useRouter } from "next/navigation";
 import { UserButton } from "@clerk/nextjs";
 import styled from "styled-components";
 
@@ -70,7 +69,6 @@ const ProfileLink = styled(NavItem)`
 
 const Navbar: React.FC = () => {
   const { signOut } = useClerk();
-  const router = useRouter();
 
   const handleSignOut = () => {
     signOut();
