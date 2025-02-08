@@ -1,5 +1,5 @@
 "use client";
-import React, { use, useState,useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import ImageGrid from "./Grid";
 
