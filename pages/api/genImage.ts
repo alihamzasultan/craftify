@@ -36,7 +36,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       console.log(response)
       const buffer = Buffer.from(await response.arrayBuffer());
-       const filenamegenerater = Math.random().toString(36).substring(7);
       const base64Image = buffer.toString('base64');
       const mimeType = 'image/png'; 
       res.status(200).json({
