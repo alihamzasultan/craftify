@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
             marginBottom: "20px",
           }}
         >
-          AI Image Generation at Your Fingertips
+          AIimage
         </h1>
         <p
           style={{
