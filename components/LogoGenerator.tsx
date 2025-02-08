@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
-
+import ImageGrid from "./Grid";
 import Image from "next/image";
 
 const ImageGenerator: React.FC = () => {
@@ -12,7 +12,7 @@ const ImageGenerator: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [imageData, setImageData] = useState<string>("");
   const [error, setError] = useState<string>("");
-  const [setImages] = useState<string[]>([]);
+
 
   useEffect(() => {
     if (!username) return;
@@ -25,7 +25,7 @@ const ImageGenerator: React.FC = () => {
           body: JSON.stringify({ username }),
         });
         const data: string[] = await response.json();
-        setImages(data);
+
       } catch (error) {
         console.error("Error fetching images:", error);
       }
